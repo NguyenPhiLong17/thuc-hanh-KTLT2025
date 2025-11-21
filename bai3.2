@@ -1,0 +1,20 @@
+def benefit(t, n, k):
+    # t: lãi suất theo %/tháng
+    # n: tiền vốn ban đầu
+    # k: số tháng gửi
+    
+    rate = 1 + t/100    # hệ số tăng mỗi tháng
+    amount = n * (rate ** k)
+    
+    return amount
+
+# Nhập dữ liệu từ bàn phím
+t = float(input("Nhap lai suat t (%/thang): "))
+n = float(input("Nhap so von ban dau n: "))
+k = int(input("Nhap so thang gui k: "))
+
+# Gọi hàm
+so_tien = benefit(t, n, k)
+
+print("So tien nhan duoc sau", k, "thang la:", so_tien)
+
