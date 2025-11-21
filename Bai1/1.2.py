@@ -1,16 +1,28 @@
-n = int(input("Nhập số nguyên dương n: "))
+BEGIN
+    DECLARE n, i AS INTEGER
 
-if n == 1:
-    print(n, "không là số nguyên tố")
-else:
-    if n < 4:
-        print(n, "là số nguyên tố")
-    else:
-        i = 2  
-        while i < n and n % i != 0:
-            i += 1
-        if i == n:
-            print(n, "là số nguyên tố")
-        else:
-            print(n, "không là số nguyên tố")
+    OUTPUT "Nhap so nguyen duong n:"
+    INPUT n
 
+    IF n = 1 THEN
+        OUTPUT n, " khong la so nguyen to"
+        END
+    END IF
+
+    IF n < 4 THEN
+        OUTPUT n, " la so nguyen to"
+        END
+    END IF
+
+    SET i = 2
+
+    WHILE (i < n) AND (n % i <> 0)
+        SET i = i + 1
+    END WHILE
+
+    IF i = n THEN
+        OUTPUT n, " la so nguyen to"
+    ELSE
+        OUTPUT n, " khong la so nguyen to"
+    END IF
+END
