@@ -1,0 +1,7 @@
+S = input("Nhập câu: ")
+
+upper = sum(ch.isupper() for ch in S)
+lower = sum(ch.islower() for ch in S)
+
+print("Chữ hoa:", upper)
+print("Chữ thường:", lower)
