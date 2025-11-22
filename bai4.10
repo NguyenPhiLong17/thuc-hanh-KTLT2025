@@ -1,0 +1,5 @@
+S = input("Nhập chuỗi các số nhị phân: ")
+lst = S.split(",")
+print("Các giá trị đã nhập:")
+for x in lst:
+    print(x)
