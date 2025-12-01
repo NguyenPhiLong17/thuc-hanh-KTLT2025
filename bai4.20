@@ -1,6 +1,0 @@
-S = input("Nhập danh sách số (ngăn cách bởi ,): ")
-
-nums = [int(x) for x in S.split(",")]
-odd = [x for x in nums if x % 2 != 0]
-
-print(",".join(map(str, odd)))
