@@ -1,0 +1,18 @@
+print("Sinh viên: Nguyễn Phi Long")
+print("Mssv: 245752021610163")
+print("##########################")
+##################################
+
+
+S = input("Nhập dãy từ: ")
+
+words = S.split()
+
+# Tìm độ dài lớn nhất
+max_len = max(len(w) for w in words)
+
+# Lấy tất cả các từ có độ dài lớn nhất
+longest_words = [w for w in words if len(w) == max_len]
+
+print("Độ dài lớn nhất là:", max_len)
+print("Các từ dài nhất là:", longest_words)
